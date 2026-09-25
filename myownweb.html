@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>my stupid website</title>
+</head>
+
+<body bgcolor="black" text="hotpink">
+   <center>
+     <h1>wtf are u doing here ?</h1>
+   
+     <p>What's your fucking name?</p>
+   
+   <input type="text" id="name">
+   
+    <br><br>
+
+    <button onclick="enterName()">ENTER</button>
+   
+   </center>
+   
+   <script>
+
+   function enterName() {
+     
+      let username = document.getElementById("name").value;
+     
+     document.body.innerHTML = `
+<center>
+
+    <h1>${username}, ARE YOU GAY? 😭</h1>
+
+    <button style="color: blue;" onclick="yesAnswer()">YES</button>
+    <button style="color: blue;" onclick="noAnswer()">NO</button>
+</center>
+`;
+     
+   }
+
+
+   
+   function yesAnswer() {
+
+    document.body.innerHTML = `
+    <center>
+        <h1>still, you're single (ʘ ͜ʖ ʘ)</h1>
+    </center>
+    `;
+
+  }
+  
+   
+  function noAnswer() {
+
+    document.body.innerHTML = `
+    <center>
+        <h1>that's why you're single ( ͡° ͜ʖ ͡°)</h1>
+    </center>
+    `;
+
+ }
+
+</script>
+  
+   
+   
+</body>
+</html>
+        
